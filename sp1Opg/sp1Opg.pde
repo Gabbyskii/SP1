@@ -1,7 +1,30 @@
+// Declare PImage variables for each group
+PImage russiaFlag, saudiArabiaFlag, egyptFlag, uruguayFlag;
+PImage portugalFlag, spainFlag, moroccoFlag, iranFlag;
+PImage franceFlag, australiaFlag, peruFlag, denmarkFlag;
+PImage argentinaFlag, icelandFlag, croatiaFlag, nigeriaFlag;
+
 void setup() {
-  size(900, 500);
+  size(900, 450);
   background(#0E3571);
-}
+ 
+ /* argentinaFlag = loadImage("Argentina.png");
+  australiaFlag = loadImage("Australia.png");
+  croatiaFlag = loadImage("Croatia.png");
+  denmarkFlag = loadImage("Denmark.png");
+  egyptFlag = loadImage("Egypt.png");
+  franceFlag = loadImage("France.png");
+  icelandFlag = loadImage("Iceland.png");
+  iranFlag = loadImage("Iran.png");
+  moroccoFlag = loadImage("Morocco.png");
+  nigeriaFlag = loadImage("Nigeria.png");
+  peruFlag = loadImage("Peru.png");
+  portugalFlag = loadImage("Portugal.png");
+  russiaFlag = loadImage("Russia.png");
+  saudiArabiaFlag = loadImage("SaudiArabia.png");
+  spainFlag = loadImage("Spain.png");
+  uruguayFlag = loadImage("Uruguay.png");*/
+ }
 
 
 void draw() {
@@ -12,6 +35,7 @@ void draw() {
   
   // Country names in group A - top left: 
   String[] groupA = {"RUSSIA", "SAUDI ARABIA", "EGYPT", "URUGUAY"};
+  //PImage[] flagsA = {russiaFlag, saudiFlag, egyptFlag, uruguayFlag};
   int i = 0;
   int space = 5;
   
@@ -27,6 +51,7 @@ void draw() {
     
  // Country names in group B - bottom left: 
   String[] groupB = {"PORTUGAL", "SPAIN", "MOROCCO", "IRAN"};
+  //PImage[] flagsB = {portugalFlag, spainFlag, moroccoFlag, iranFlag};
   int f = 0;
   int spaceB = 5;
   
@@ -42,6 +67,7 @@ void draw() {
    
    // Country names in group C - top right: 
   String[] groupC = {"FRANCE", "AUSTRALIA", "PERU", "DENMARK"};
+  //PImage[] flagsC = {franceFlag, australiaFlag, peruFlag, denmarkFlag};
   int g = 0;
   int spaceC = 5;
   
@@ -57,6 +83,7 @@ void draw() {
   
   // Country names in group D - bottom right: 
   String[] groupD = {"ARGENTINA", "ICELAND", "CROATIA", "NIGERIA"};
+  //PImage[] flagsD = {argentinaFlag, icelandFlag, croatiaFlag, nigeriaFlag};
   int h = 0;
   int spaceD = 5;
   
@@ -69,6 +96,18 @@ void draw() {
     text(countryName, 550, 290 + h * (40 + spaceD));
     h++; 
   }
-  
+  // Group labels
+  fill(255);
+  textSize(20);
+  stroke(2);
+ //making group a & c text blue:
+  fill(0, 255, 255);
+  text("GROUP A", 180, 30);
+  text("GROUP C", 590, 30);
+ //making group b & d yellow:
+  fill(255, 255, 0);
+  text("GROUP B", 180, 250);
+  text("GROUP D", 590, 250);
   
 }
+  
