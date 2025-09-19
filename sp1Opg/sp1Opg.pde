@@ -1,30 +1,11 @@
 // Declare PImage variables for each group
-PImage russiaFlag, saudiArabiaFlag, egyptFlag, uruguayFlag;
-PImage portugalFlag, spainFlag, moroccoFlag, iranFlag;
-PImage franceFlag, australiaFlag, peruFlag, denmarkFlag;
-PImage argentinaFlag, icelandFlag, croatiaFlag, nigeriaFlag;
-
+   
 void setup() {
   size(900, 450);
   background(#0E3571);
- 
- /* argentinaFlag = loadImage("Argentina.png");
-  australiaFlag = loadImage("Australia.png");
-  croatiaFlag = loadImage("Croatia.png");
-  denmarkFlag = loadImage("Denmark.png");
-  egyptFlag = loadImage("Egypt.png");
-  franceFlag = loadImage("France.png");
-  icelandFlag = loadImage("Iceland.png");
-  iranFlag = loadImage("Iran.png");
-  moroccoFlag = loadImage("Morocco.png");
-  nigeriaFlag = loadImage("Nigeria.png");
-  peruFlag = loadImage("Peru.png");
-  portugalFlag = loadImage("Portugal.png");
-  russiaFlag = loadImage("Russia.png");
-  saudiArabiaFlag = loadImage("SaudiArabia.png");
-  spainFlag = loadImage("Spain.png");
-  uruguayFlag = loadImage("Uruguay.png");*/
+  
  }
+  
 
 
 void draw() {
@@ -35,7 +16,7 @@ void draw() {
   
   // Country names in group A - top left: 
   String[] groupA = {"RUSSIA", "SAUDI ARABIA", "EGYPT", "URUGUAY"};
-  //PImage[] flagsA = {russiaFlag, saudiFlag, egyptFlag, uruguayFlag};
+  //PImage[] flagsA = {russiaFlag, saudiArabiaFlag, egyptFlag, uruguayFlag};
   int i = 0;
   int space = 5;
   
@@ -67,7 +48,7 @@ void draw() {
    
    // Country names in group C - top right: 
   String[] groupC = {"FRANCE", "AUSTRALIA", "PERU", "DENMARK"};
-  //PImage[] flagsC = {franceFlag, australiaFlag, peruFlag, denmarkFlag};
+ // PImage[] flagsC = {franceFlag, australiaFlag, peruFlag, denmarkFlag};
   int g = 0;
   int spaceC = 5;
   
@@ -83,7 +64,7 @@ void draw() {
   
   // Country names in group D - bottom right: 
   String[] groupD = {"ARGENTINA", "ICELAND", "CROATIA", "NIGERIA"};
-  //PImage[] flagsD = {argentinaFlag, icelandFlag, croatiaFlag, nigeriaFlag};
+ // PImage[] flagsD = {argentinaFlag, icelandFlag, croatiaFlag, nigeriaFlag};
   int h = 0;
   int spaceD = 5;
   
@@ -108,6 +89,61 @@ void draw() {
   fill(255, 255, 0);
   text("GROUP B", 180, 250);
   text("GROUP D", 590, 250);
+  
+//GROUP A FLAGS:
+  PImage russiaFlag = loadImage("Russia.png");
+  image(russiaFlag, 18,50,70,30);
+  
+  PImage saudiArabiaFlag = loadImage("SaudiArabia.png");
+  image(saudiArabiaFlag, 18, 95, 70,30);
+  
+  PImage egyptFlag = loadImage("Egypt.png");
+  image(egyptFlag, 18, 140, 70,30);
+  
+  PImage uruguayFlag = loadImage("Uruguay.png");
+  image(uruguayFlag, 18, 185, 70,30);
+  
+  
+//GROUP B FLAGS:
+  PImage portugalFlag = loadImage("Portugal.png");
+  image(portugalFlag, 18, 270, 70,30);
+  
+  PImage spainFlag = loadImage("Spain.png");
+  image(spainFlag, 18, 315, 70,30);
+  
+  PImage  moroccoFlag = loadImage("Morocco.png");
+  image(moroccoFlag, 18, 360, 70,30);
+  
+  PImage iranFlag = loadImage("Iran.png");
+  image(iranFlag, 18, 405, 70,30);
+  
+  
+//GROUP C FLAGS:
+   PImage franceFlag = loadImage("France.png");
+   image(franceFlag, 468, 50, 70, 30);
+   
+   PImage australiaFlag = loadImage("Australia.png");
+   image(australiaFlag, 468, 95, 70, 30);
+   
+   PImage peruFlag = loadImage("Peru.png");
+   image(peruFlag, 468, 140, 70, 30);
+   
+   PImage denmarkFlag = loadImage("Denmark.png");
+   image(denmarkFlag, 468, 185, 70, 30);
+
+//GROUP D FLAGS:
+  PImage argentinaFlag = loadImage("Argentina.png");
+  image(argentinaFlag, 468,270,70,30);
+  
+  PImage icelandFlag = loadImage("Iceland.png");
+  image(icelandFlag, 468, 315,70,30);
+  
+  PImage croatiaFlag = loadImage("Croatia.png");
+  image(croatiaFlag, 468, 360,70,30);
+ 
+  PImage nigeriaFlag = loadImage("Nigeria.png");
+  image(nigeriaFlag, 468, 405,70,30);
+  
   
 }
   
